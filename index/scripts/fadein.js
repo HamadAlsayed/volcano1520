@@ -6,15 +6,15 @@ vid.oncanplaythrough = function() {
     setTimeout(function() {
         let e = document.getElementById('hero-video');
         fade(e);
-    }, 5000);
+    }, 2000);
 };
 
 function fade(element) {
     let op = 0;
     let timer = setInterval(function() {
-        if (op >= 0.3) clearInterval(timer);
+        if (op >= 0.4) clearInterval(timer);
         element.style.opacity = op;
         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op += op * 0.1 || 0.1;
-    }, 100);
+    }, 20);
 }
