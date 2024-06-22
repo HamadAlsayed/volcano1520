@@ -1,0 +1,36 @@
+:root {
+    --main-color: #2a2525;
+    --gold-color: #d6963d;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--header-color);
+}
+
+#header {
+    background-color: var(--main-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-button {
+    font-size: 18px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+button#order {
+    background-color: var(--gold-color);
+    border-radius: 30px;
+    padding: 5px 15px;
+    min-height: 30px; min-width: 120px;
+}
+
+div.section {
+    display: flex;
+}
