@@ -11,26 +11,31 @@ body {
 #header {
     background-color: var(--main-color);
     font-size: 20px;
+    padding: 8px;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
 
-.header-button {
+.logo {
+    display: flex;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto 0 0;
+}
+
+ .header-buttons > button{
+    background-color: transparent;
     font-size: 18px;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px;
     text-decoration: none;
-    background-color: transparent;
 }
 
-button#order {
+button#order-btn {
     background-color: var(--gold-color);
     border-radius: 30px;
     padding: 5px 15px;
     min-height: 30px; min-width: 120px;
-}
-
-div.section {
-    display: flex;
 }
