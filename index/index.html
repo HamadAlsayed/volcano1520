@@ -15,38 +15,44 @@
                 <button type="button">Contact</button>
                 <button type="button" id="order-btn">Order</button>
             </div>
+            <script src="./scripts/stickyheader.js"></script>
         </div>
-
-        <div id="hero">
+    
+        <div class="content">
+            <div id="hero">
             
-            <video loop muted autoplay playsinline id="hero-video">
-                <source src="../media/hero-background.mp4" type="video/mp4">
-                <script src="./scripts/fadein.js"></script>
-            </video>
+                <video loop muted autoplay playsinline id="hero-video">
+                    <source src="../media/hero-background.mp4" type="video/mp4">
+                    
+                    <script src="./scripts/fadein.js"></script>
+                </video>
+        
+                <div id="hero-content">
+                    <embed src="../media/logo.svg" alt="Volcano 1520 logo" class="logo">
+                    <p>Handcrafting happiness, one chocolate at a time.</p>
+                    <button type="button" id="order-btn">Discover our chocolates</button>
+                </div>
+            </div>
     
-            <div id="hero-content">
-                <embed src="../media/logo.svg" alt="Volcano 1520 logo" class="logo">
-                <p>Handcrafting happiness, one chocolate at a time.</p>
-                <button type="button" id="order-btn">Discover our chocolates</button>
+            <div id="collections">
+                <h1 id="col-text">Collections</h1>
+                <div id="grid">
+                    <a href="../index/index.html"><img class="col-btn" src="../media/bars.jpg" alt="Chocolate bars decorated with pretzels, dried fruits and pecans"></a>
+    
+                    <a href="../index/index.html"><img class="col-btn" src="../media/chocolates.jpg" alt=""></a>
+        
+                    <a href="../index/index.html"><img class="col-btn" src="../media/placeholder-logo.png" alt=""></a>
+        
+                    <a href="../index/index.html"><img class="col-btn" src="../media/placeholder-logo.png" alt=""></a>
+                </div>
+    
+            </div>
+    
+            <div id="footer">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
         </div>
 
-        <div id="collections">
-            <h1 id="col-text">Collections</h1>
-            <div id="grid">
-                <a href="../index/index.html"><img class="col-btn" src="../media/bars.jpg" alt="Chocolate bars decorated with pretzels, dried fruits and pecans"></a>
-
-                <a href="../index/index.html"><img class="col-btn" src="../media/chocolates.jpg" alt=""></a>
-    
-                <a href="../index/index.html"><img class="col-btn" src="../media/placeholder-logo.png" alt=""></a>
-    
-                <a href="../index/index.html"><img class="col-btn" src="../media/placeholder-logo.png" alt=""></a>
-            </div>
-
-        </div>
-
-        <div id="footer">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
+        
     </body>
 </html>

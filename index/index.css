@@ -17,9 +17,11 @@ body {
 }
 
 #header {
-    font-size: 20px;
     display: flex;
     align-items: center; justify-content: flex-end;
+    font-size: 20px;
+    width: 100%;
+    z-index: 1;
 }
 
 #header > .logo {
@@ -41,6 +43,17 @@ body {
     padding: 10px;
     margin-right: 2px;
     text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.sticky + .content {
+    padding-top: 62.44px;
 }
 
 button#order-btn {
@@ -107,6 +120,9 @@ h1#col-text {
     position: relative;
     background: linear-gradient(to right, var(--gold-color), gold);
     padding: 4px;
+}
+
+#grid > a {
     margin: 16px;
 }
 
