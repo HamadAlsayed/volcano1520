@@ -4,8 +4,9 @@
     --hover-gold: #ac6323;
 }
 
-html {
+html, body {
     min-height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -79,32 +80,32 @@ button {
 
 
 #hero {
+    
     z-index: -1;
-    min-height: 100%;
-    padding-bottom: 30px;
+    /* min-height: 100%; */
+    height: 100vh;
 }
 
 #hero-video {
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0; opacity: 0.4;
-    min-height: 535px; min-width: 1100px; width: 100%;
-    margin-top: -30px;
+    min-height: 100vh; min-width: 1100px;
     filter: blur(3px);
     z-index: -1;
 }
 
 #hero-content {
     display: flex; flex-direction: column;
+    height: 100vh;
     position: relative;
     justify-content: center; align-items: center;
     color: var(--volcano-gold);
-    padding: 20px;
-    margin-bottom: 40px;
 }
 
 #hero-content > .logo {
     width: 100%; height: auto; max-width: 340px;
     margin-bottom: 40px; margin-top: 120px;
+    filter: drop-shadow(5px 5px 0.75rem black);
 }
 
 #collections {
@@ -114,8 +115,7 @@ button {
 h1#col-text {
     color: var(--volcano-gold);
     background-color: white;
-    margin: -10px;
-    margin-top: 10px;
+    margin: 0;
     padding: 18px;
     text-align: center;
 }
@@ -132,7 +132,7 @@ h1#col-text {
     width: 100%; max-width: 300px; max-height: auto;
     padding: 1rem;
     position: relative;
-    background: linear-gradient(to right, var(--volcano-gold), gold);
+    background: linear-gradient(to right, var(--volcano-gold), var(--hover-gold));
     padding: 4px;
 }
 
