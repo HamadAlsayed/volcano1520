@@ -98,7 +98,7 @@ button {
 #hero-content {
     display: flex; flex-direction: column;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 160px; margin-left: 30px; margin-right: 30px;
     justify-content: center; align-items: center;
     color: var(--volcano-gold);
 }
