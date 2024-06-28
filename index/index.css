@@ -1,10 +1,12 @@
 :root {
     --main-color: #2a2525;
+    --alt-color: #433b3b;
     --volcano-gold: #dd8133;
     --hover-gold: #ac6323;
 }
 
 html, body {
+    scroll-behavior: smooth;
     min-height: 100%;
     overflow-x: hidden;
 }
@@ -16,10 +18,6 @@ body {
     color: white;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-button {
-    cursor: pointer;
 }
 
 #header {
@@ -42,15 +40,16 @@ button {
     margin-right: 20px;
 }
 
-.header-buttons > button {
+.header-buttons a {
     background-color: transparent;
     color: white;
     font-size: 18px;
     border: none;
     padding: 10px;
-    margin-right: 2px;
     text-decoration: none;
 }
+
+.header-buttons a:hover {filter: blur(0.035rem);}
 
 .sticky {
     position: fixed;
@@ -63,12 +62,51 @@ button {
     padding-top: 62.44px;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dd-btn {color: white; text-decoration: none; transition-duration: 0.2s; font-size: 18px; cursor: pointer;}
+
+.dd-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin-top: 8px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0;
+    transition-duration: 0.2s;
+    transition-behavior: allow-discrete;
+}
+
+.dd-content > a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    font-size: 18px;
+    display: block;
+    transition-duration: 0.4s;
+}
+
+.dd-content a:hover {
+    background-color: var(--alt-color);
+    border-radius: 10px;
+}
+
+.dropdown:hover .dd-content {display: block; opacity: 1;}
+
 #order-btn {
     background-color: var(--volcano-gold);
     border-radius: 15px;
     padding: 5px 15px;
+    font-size: 18px;
     border: none;
     color: white;
+    cursor: pointer;
     min-height: 40px; min-width: 110px;
     transition-duration: 0.3s;
 }
@@ -109,42 +147,57 @@ button {
     filter: drop-shadow(5px 5px 0.75rem black);
 }
 
-#collections {
-    display: flex; flex-direction: column;
+#about {
+    width: auto; min-height: 500px;
+    background-color: var(--alt-color);
+    border-bottom: 10px solid white;
 }
 
-h1#col-text {
-    color: var(--volcano-gold);
-    background-color: white;
-    margin: 0;
-    padding: 18px;
-    text-align: center;
+#contact {
+    margin: 40px;
 }
 
-#grid {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 16px;
-}
 
-.col-btn {
+
+/* .col-btn {
     width: 100%; max-width: 300px; max-height: auto;
     padding: 1rem;
     position: relative;
     background: linear-gradient(to right, var(--volcano-gold), var(--hover-gold));
     padding: 4px;
-}
-
-#grid > a {
-    margin: 16px;
-}
+} */
 
 #footer {
+    display: flex; flex-direction: column;
+    justify-content: center;
     min-height: 46px; width: 100%;
     background-color: var(--volcano-gold);
     position: relative; bottom: 0; left: 0;
     padding: 6px;
     text-align: center;
+}
+
+.footer-titles {
+    display: flex; flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 50vw;
+}
+
+#footer > .horizontal-section {
+    display: flex; flex-direction: horizontal;
+}
+
+#social-media {
+    margin: 12px;
+}
+
+#social-media > a {
+    color: white;
+    font-size: 20px;
+    margin: 4px;
+}
+
+#copyright {
+    margin: 12px;
+    align-self: flex-start;
 }

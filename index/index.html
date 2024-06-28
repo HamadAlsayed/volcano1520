@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/ad8429aa72.js" crossorigin="anonymous"></script>
         <title>Volcano1520</title>
     </head>
 
@@ -11,8 +12,17 @@
         <div id="header">
             <embed src="../media/logo-less.svg" alt="Volcano 1520 logo" class="logo">
             <div class="header-buttons">
-                <button type="button">About</button>
-                <button type="button">Contact</button>
+                <div class="dropdown">
+                    <a class="dd-btn">Discover</a>
+                    <div class="dd-content">
+                        <a href="">Chocolates</a>
+                        <a href="">Gift Boxes</a>
+                        <a href="">Chocolate Bars</a>
+                    </div>
+                </div>
+                
+                <a href="">About</a>
+                <a href="">Contact</a>
                 <button type="button" id="order-btn">Order</button>
             </div>
             <script src="./scripts/stickyheader.js"></script>
@@ -33,25 +43,33 @@
                 </div>
             </div>
     
-            <div id="collections">
-                <h1 id="col-text">Collections</h1>
-                <div id="grid">
-                    <a href="../index/index.html"><img class="col-btn" src="../media/bars.jpg" alt="Chocolate bars decorated with pretzels, dried fruits and pecans"></a>
-    
-                    <a href="../index/index.html"><img class="col-btn" src="../media/chocolates.jpg" alt=""></a>
-        
-                    <a href="../index/index.html"><img class="col-btn" src="../media/placeholder-logo.png" alt=""></a>
-        
-                    <a href="../index/index.html"><img class="col-btn" src="../media/placeholder-logo.png" alt=""></a>
-                </div>
-    
+            <div id="about">
+
             </div>
     
             <div id="footer">
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="footer-titles">
+                    <p>CONTACT</p>
+                    <p>COMPANY</p>
+                    <p>SOCIAL MEDIA</p>
+                </div>
+                <div class="horizontal-section">
+                    <div id="contact">
+                    </div>
+    
+                    <div id="social-media">
+                        <a href="https://www.instagram.com/volcano1520?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61557483800090"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+
+                    <div id="company">
+                    </div>
+
+                </div>
+
+                <div id="copyright">© Volcano1520 2024</div>
             </div>
         </div>
 
-        
     </body>
 </html>
