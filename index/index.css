@@ -104,7 +104,7 @@ body {
     background-color: var(--volcano-gold);
     border-radius: 15px;
     padding: 12px 20px;
-    font-size: 18px;
+    font-size: calc(8px + 1vh);
     border: none;
     cursor: pointer;
     color: white;
